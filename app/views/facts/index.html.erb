@@ -1,0 +1,20 @@
+<h1>Master List of Facts</h1>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Body</th>
+    <th>Source</th>
+  </tr>
+
+  <% @facts.each do |fact| %>
+  <tr>
+    <td><%= fact.category %></td>
+    <td><%= fact.body %></td>
+    <td><%= link_to('Source', fact.source) %></td>
+    <td><%= link_to 'Show', fact_path(fact) %></td>
+    <td><%= link_to 'Edit', edit_fact_path(fact) %></td>
+  </tr>
+  <% end %>
+</table>
+<%= link_to 'New Fact', new_fact_path %>

@@ -1,0 +1,32 @@
+<h3>Editing Facts</h3>
+
+<%= form_for :fact, url: fact_path(@fact), method: :patch do |f| %>
+
+<% if @fact.errors.any? %>
+<div id='error_explanation'>
+  <h6>
+    <%= pluralize(@fact.errors.count, "error") %> prohibited this article from being saved:
+  </h6>
+  <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <p>
+    <%= f.label :category %>
+    <%= f.text_field :category %>
+  </p>
+  <p>
+    <%= f.label :text %>
+    <%= f.text_area :body%>
+  </p>
+  <p>
+    <%= f.label :source %>
+    <%= f.text_area :source %>
+  <p>
+    <%= f.submit %>
+  </p>
+  <% end %>
+  <%= link_to 'Back', facts_path %>
