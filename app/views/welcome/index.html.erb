@@ -1,9 +1,19 @@
 <DOCTYPE html>
   <head>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    <title> Raleigh Newcomer</title><br/><br/><br/>
   </head>
   <body>
-    <h1>Raleigh & Rails</h1>
-<%= link_to 'Raleigh Facts',controller: 'facts' %>
+      <div id="main_div">
+        <center>
+        <h1>RALEIGH NEWCOMER<br/><br/>
+        <%= link_to 'Raleigh Stuff - Enjoy!',controller: 'facts' %></h1><br/><br/>
+        <% yield %>
+        <p>I made this app to catalog things I've discovered down here in Raleigh. After living all
+        over the place - Baltimore County, Baltimore City, all across Maryland and a few places in the <!DOCTYPE html>
+        area - I got a little spoiled in the attractions I expected. Since this is a smaller city, I
+        thought it would be smart to keep track of the things I find that are fun to do.</p>
+      </div>
+    </center>
    </body>
    </html>
