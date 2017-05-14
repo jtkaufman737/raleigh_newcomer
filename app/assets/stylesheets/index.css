@@ -1,7 +1,12 @@
-html{
-  /* background-image: url('http://imgur.com/mgx0VxP'); */
-  background-image: url('http://imgur.com/mgx0VxP'); 
-  background-position: cover;
+html {
+    background-image:url('http://imgur.com/mgx0VxP') no-repeat center center fixed;
+    position:cover;
+    display:flex;
+    justify-content:space-around;
+    vertical-align:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 body{

@@ -18,11 +18,14 @@
  /* BASE STYLES */
 
 html {
-    background-image:url(raleigh4.png);
+    background-image:url(raleigh_5.png) no-repeat center center fixed;
     position:cover;
     display:flex;
     justify-content:space-around;
     vertical-align:center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 body{
