@@ -11,7 +11,7 @@ class FactsController < ApplicationController
     @fact = Fact.new(fact_params)
 
     if @fact.save
-      redirect_to @fact
+      redirect_to @fact.id
     else
       render 'new'
     end
@@ -23,6 +23,6 @@ class FactsController < ApplicationController
 
   private
     def fact_params
-      params.require(:fact,:id).permit(:category,:body,:source)
+      params.require(:fact).permit(:category,:body,:source)
     end
 end
