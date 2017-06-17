@@ -56,7 +56,6 @@ p{
   border-radius:15px;
 }
 
-
 /* CUSTOMIZED CLASSES AND IDS */
 
 .mainFacts{
@@ -67,4 +66,31 @@ p{
   background-color:white;
   padding:10px 18px 10px 18px;
   border-radius:4px;
+  font-family:monospace;
+  font-size:30px;
+  color:#461968;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+  text-decoration:none;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+  background-color:white;
+  padding:10px 18px 10px 18px;
+  border-radius:4px;
+  font-family:monospace;
+  font-size:30px;
+  color:#461968;
+  text-decoration:none;
+}
+
+.formMain{
+  width:70%;
+  height:70%;
+  background-color:white;
+  display:flex !important;
+  justify-content:space-around;
+  align-content:center;
 }
