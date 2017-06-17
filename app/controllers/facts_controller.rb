@@ -23,6 +23,6 @@ class FactsController < ApplicationController
 
   private
     def fact_params
-      params.require(:fact).permit(:category,:body,:source)
+      params.require(:fact,:id).permit(:category,:body,:source)
     end
 end
