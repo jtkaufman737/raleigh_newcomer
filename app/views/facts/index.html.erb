@@ -1,15 +1,14 @@
 <DOCTYPE html>
 <head>
-  <img src='raleigh_5.png' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
 </head>
-<body>
-<h1>Master List of Facts</h1>
+<body><br/><br/><center>
+<h1 style="background:none; color:#461968"><b>FACTS</b></h1>
 
-<table>
-  <tr>
-    <th>Category</th>
-    <th>Body</th>
-    <th>Source</th>
+<table style="width:80%;">
+  <tr style="font-size:48px; color:white; background-color:black;">
+    <th style="width:33%;">Category</th>
+    <th style="width:33%;">Body</th>
+    <th style="width:33%;">Source</th>
   </tr>
 
   <% @facts.each do |fact| %>
@@ -21,7 +20,7 @@
     <td><%= link_to 'Edit', edit_fact_path(fact) %></td>
   </tr>
   <% end %>
-</table>
+</table></center><br/><br/><br/>
 <%= link_to 'New Fact', new_fact_path %>
 </body>
 </html>
