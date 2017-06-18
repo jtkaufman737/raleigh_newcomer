@@ -1,15 +1,15 @@
 class FactsController < ApplicationController
 
 def index
- @facts=fact.all
+ @facts=Fact.all
 end
 
 def new
-  @fact = fact.new
+  @fact = Fact.new
 end
 
 def create
-  @fact=fact.new(fact_params)
+  @fact=Fact.new(fact_params)
   puts fact_params
 
   binding.pry
@@ -26,7 +26,7 @@ def create
     format.html {render action: 'new'}
   end
 end
-end 
+end
 
 
 def show

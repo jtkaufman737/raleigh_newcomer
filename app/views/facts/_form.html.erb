@@ -4,7 +4,7 @@
   </head>
 <body id="formMain" style="width:50%; margin-top:5%; margin-bottom:5%;">
 <form class="defaultForm">
-<%= form_for :fact, url: facts_path do |f|%>
+<%= form_for @fact do |f|%>
 <% if @fact.errors.any? %>
    <div id="error_explanation">
      <h2>
@@ -33,8 +33,7 @@
 </form>
 
 <button class="buttonStyle"><center>
-  <%= f.submit "Save Fact"%>
-<% end %>
+  <%= f.submit "Save"%>
 <%= link_to 'Back', facts_path, :class => 'buttonStyle'  %></button></center>
-</body>
+</body><% end %>
 </html>
