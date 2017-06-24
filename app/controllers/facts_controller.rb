@@ -9,24 +9,14 @@ def new
 end
 
 def create
-  @fact=Fact.new(fact_params)
-  puts fact_params
+    @fact = Fact.new(list_params)
 
-  binding.pry
-  if @fact.save
-    redirect_to facts_url
-  else
-    redirect_to new_fact_url
+    if @fact.save
+      redirect_to @fact
+    else
+      render 'new'
+    end
   end
-
-  respond_to do |format|
-  if @fact.save
-    format.html {redirect_to @fact, notice: 'New fact created'}
-  else
-    format.html {render action: 'new'}
-  end
-end
-end
 
 
 def show
@@ -39,11 +29,14 @@ def edit
 end
 
 def update
-  fact = Fact.find(params[:id])
-  fact.update(fact_params)
+    @fact = Fact.find(params[:id])
 
-  redirect_to fact
-end
+    if @fact.update(fact_params)
+      redirect_to @fact
+    else
+      render 'edit'
+    end
+  end
 
 def destroy
   fact = Fact.find(params[:id])
