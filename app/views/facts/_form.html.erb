@@ -1,9 +1,8 @@
-<DOCTYPE html>
-  <head>
+<head>
     <link rel='stylesheet' type="text/css" href='/application.scss'/>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   </head>
-<body id="formMain" style="width:50%; margin-top:5%; margin-bottom:5%;">
-<form class="defaultForm">
+<div id="formMain" style="width:50%; margin-top:5%; margin-bottom:5%;">
 <%= form_for @fact do |f|%>
 <% if @fact.errors.any? %>
    <div id="error_explanation">
@@ -29,10 +28,9 @@
         <%= f.text_field :body%><br/><br/>
         <%= f.text_field :source %><br/><br/>
       </div>
-    </div><br/>
-</form>
-<button class="buttonStyle"><center>
-  <%= f.submit %><% end %>
-<%= link_to 'Back', facts_path, :class => 'buttonStyle'%></button></center>
-</body>
-</html>
+    </div><br/><br/>
+<center><div style="padding-top:50px; margin-top:50px;"><br/><br/><br/><br/>
+<br/><br/><br/>  <%= f.submit %><% end %>
+<%= link_to 'Back', facts_path, :class => 'buttonStyle'%>
+<%= link_to 'Delete', facts_path, :class => 'buttonStyle'%></center></div>
+</div>

@@ -1,11 +1,12 @@
 <DOCTYPE html>
 <head>
   <link rel="stylesheet" type="text/css" href="/application.scss"/>
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 </head>
 <body><br/><br/><center>
 <h1 style="background:none; color:#461968"><b>FACTS</b></h1>
 
-<table style="width:80%;">
+<table style="width:100%;">
   <tr style="font-size:48px; color:white; background-color:black;">
     <th style="width:33%;">Category</th>
     <th style="width:33%;">Body</th>
@@ -15,11 +16,11 @@
   <% @facts.each do |fact| %>
   <tr style="background-color:white;">
     <td style="font-size:40px; padding-left:15px;"><%= fact.category %></td>
-    <td style="font-size:40px; padding-left:15px;"><%= fact.body %></td>
-    <td style="font-size:22px;">&#160;&#160;
+    <td style="font-size:28px; padding-left:15px;"><%= fact.body %></td>
+    <td style="font-size:22px; display:flex; padding:11px; align-content:center; justify-content:space-around;">&#160;&#160;
       <%= link_to 'Show', fact_path(fact) %>&#160;&#160;
       <%= link_to 'Edit', edit_fact_path(fact) %>&#160;&#160;
-      <%= link_to 'Delete', fact_path(fact), method: :delete, data: { confirm: 'Delete this fact?' } %>
+      <%= link_to 'Delete', fact_path(fact), method: :destroy, data: { confirm: 'Delete this fact?' } %>
     </td>
   </tr>
   <% end %>

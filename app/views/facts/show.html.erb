@@ -1,5 +1,6 @@
 <DOCTYPE html>
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 </head>
 <body>
 <p>
@@ -10,11 +11,12 @@
   <strong>Body:</strong>
   <%= @fact.body %>
 </p>
-<p>
+<p style="overflow:hidden;  overflow-wrap:break-word; word-wrap:break-word;">
   <strong>Source:</strong>
   <%= @fact.source %>
 </p><br/><br/>
 <%= link_to 'Edit', edit_fact_path(@fact),:class => 'buttonStyle'  %>
 <%= link_to 'Back', facts_path, :class => 'buttonStyle'  %>
+<%= link_to 'Delete', facts_path, :class => 'buttonStyle'  %>
 </body>
 </html>
