@@ -16,15 +16,16 @@
   <tr style="background-color:white;">
     <td style="font-size:40px; padding-left:15px;"><%= fact.category %></td>
     <td style="font-size:40px; padding-left:15px;"><%= fact.body %></td>
-    <td style="font-size:22px;">&#160;<%= link_to('See Fact', fact.source) %> &#160;&#160;
-    <%= link_to 'Show', fact_path(fact) %>&#160;&#160;&#160;
-    <%= link_to 'Edit', edit_fact_path(fact) %></td>
+    <td style="font-size:22px;">&#160;&#160;
+      <%= link_to 'Show', fact_path(fact) %>&#160;&#160;
+      <%= link_to 'Edit', edit_fact_path(fact) %>&#160;&#160;
+      <%= link_to 'Delete', fact_path(fact), method: :delete, data: { confirm: 'Delete this fact?' } %>
+    </td>
   </tr>
   <% end %>
 </table></center><br/><br/><br/>
 
 <%= link_to 'New Fact', new_fact_path, :class => 'buttonStyle' %>
-<br/><center><h6><a href="www.joytaylorkaufman.com/pages/work"/>BACK TO PORTFOLIO SITE</a></h6><center><br/><br/>
 <!--don't judge me on all the inline, I deal with css enough at work that I'm choosing to do this lazily -->
 </body>
 </html>

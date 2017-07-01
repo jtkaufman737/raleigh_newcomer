@@ -13,8 +13,8 @@
 <p>
   <strong>Source:</strong>
   <%= @fact.source %>
-</p>
-<%= link_to 'Edit', edit_fact_path(@fact) %>
-<%= link_to 'Back', facts_path %>
+</p><br/><br/>
+<%= link_to 'Edit', edit_fact_path(@fact),:class => 'buttonStyle'  %>
+<%= link_to 'Back', facts_path, :class => 'buttonStyle'  %>
 </body>
 </html>
