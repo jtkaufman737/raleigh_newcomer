@@ -23,6 +23,7 @@ default: &default
 
 development:
   <<: *default
+  host: localhost
   database: raleigh_newcomer_development
 
   # The specified database role being used to connect to postgres.
