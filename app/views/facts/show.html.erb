@@ -1,4 +1,3 @@
-<DOCTYPE html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 </head>
@@ -17,6 +16,5 @@
 </p><br/><br/>
 <%= link_to 'Edit', edit_fact_path(@fact),:class => 'buttonStyle'  %>
 <%= link_to 'Back', facts_path, :class => 'buttonStyle'  %>
-<%= link_to 'Delete', facts_path, :class => 'buttonStyle'  %>
+<%= link_to 'Delete', fact_path(@fact), method: :delete, data: { confirm: 'Delete this fact?' } %>
 </body>
-</html>
