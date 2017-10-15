@@ -44,7 +44,7 @@ html {
 
 /* line 32, /Users/bengreenberg/Development/hacktoberfest2017/raleigh_newcomer/app/assets/stylesheets/application.scss */
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   /* background-color:white; */
   height: 60%;
@@ -81,7 +81,7 @@ p {
   background-color: white;
   padding: 10px 18px 10px 18px;
   border-radius: 4px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   color: #461968;
   border-width: 2px;
@@ -139,7 +139,7 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
   background-color: white;
   padding: 10px 18px 10px 18px;
   border-radius: 4px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   color: #461968;
   text-decoration: none;

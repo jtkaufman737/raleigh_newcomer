@@ -1,7 +1,10 @@
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
-<body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+</style>
+<body style="background-color:white;">
 <p>
   <strong>Category:</strong>
   <%= @fact.category %>
@@ -16,5 +19,5 @@
 </p><br/><br/>
 <%= link_to 'Edit', edit_fact_path(@fact),:class => 'buttonStyle'  %>
 <%= link_to 'Back', facts_path, :class => 'buttonStyle'  %>
-<%= link_to 'Delete', fact_path(@fact), method: :delete, data: { confirm: 'Delete this fact?' } %>
+<%= link_to 'Delete', fact_path(@fact), method: :delete, data: { confirm: 'Delete this fact?' }, :class => 'buttonStyle' %>
 </body>
