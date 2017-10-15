@@ -4,13 +4,15 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 </style>
-<body style="background-color:white;">
+<br/><br/><br/>
+<body>
+<div class="container">
 <p>
   <strong>Category:</strong>
   <%= @fact.category %>
 </p>
 <p>
-  <strong>Body:</strong>
+  <strong>Description:</strong>
   <%= @fact.body %>
 </p>
 <p style="overflow:hidden;  overflow-wrap:break-word; word-wrap:break-word;">
@@ -20,4 +22,5 @@
 <%= link_to 'Edit', edit_fact_path(@fact),:class => 'buttonStyle'  %>
 <%= link_to 'Back', facts_path, :class => 'buttonStyle'  %>
 <%= link_to 'Delete', fact_path(@fact), method: :delete, data: { confirm: 'Delete this fact?' }, :class => 'buttonStyle' %>
+</div
 </body>

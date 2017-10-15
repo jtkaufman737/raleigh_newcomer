@@ -17,6 +17,9 @@
    </div>
  <% end %>
  <div class="container"><br/>
+   <table>
+     <tr>
+       <td>
       <div class="column-right">
         <%= f.label :category %>:<br/><br/>
         <%= f.label :text %>:<br/><br/>
@@ -29,7 +32,7 @@
       </div>
     <br/><br/>
 <center><div style="padding-top:50px; margin-top:50px;">
-<br/><br/><br/>  <%= f.submit %><% end %>
+<br/><br/>
+</div><br/></div><br/></div>  <%= f.submit %><% end %>
 <%= link_to 'Back', facts_path, :class => 'buttonStyle'%>
-<%= link_to 'Delete', facts_path, :class => 'buttonStyle'%></center></div><br/>
-</div></div>
+<%= link_to 'Delete', facts_path, :class => 'buttonStyle'%></center>
