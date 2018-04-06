@@ -3,6 +3,8 @@
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
     <title> Raleigh Explorer</title><br/><br/><br/>
     <!-- <img src='http://i.imgur.com/zBTl5Fu.png' style='position:fixed;top:0px;left:0px;width:105%;height:100%;z-index:-1; margin-left:-1.5%; margin-right:-1.5%;'> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   </head>
   <body>
       <div id="main_div">
@@ -10,7 +12,7 @@
         <h1>Raleigh Explorer<br/><br/>
         <%= link_to 'Raleigh Stuff - Enjoy!',controller: 'facts' %></h1><br/><br/>
         <% yield %>
-        <p>I've been fortunate enough to see some beautiful cities - Munich, London, Paris -- I've also lived all around the
+        <p class="inline">I've been fortunate enough to see some beautiful cities - Munich, London, Paris -- I've also lived all around the
         beautiful DC area. (Baltimore City, 5 minutes outside of Crystal City, Northern VA, Manassas.) When I hit 26, I finally
         decided to find a nice quiet place to settle down. I essentially picked Raleigh off a map, and I've loved it ever since.
         Since this is a smaller city than I'm used to, I am making this app to catalog the good places I've found down here.
